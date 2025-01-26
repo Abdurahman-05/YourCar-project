@@ -8,7 +8,8 @@ import Suzuki from "../assets/Logo/Suzuki.png";
 import Toyota from "../assets/Logo/Toyota.png";
 import Volvo from "../assets/Logo/Volvo.png";
 
-const Logo = () => {
+
+const Brand = () => {
   return (
     <div className="w-full   bg-[#fafafa] flex flex-wrap justify-center items-center gap-[77px] my-16 ">
       <img src={BMW} alt="" />
@@ -23,4 +24,4 @@ const Logo = () => {
   );
 };
 
-export default Logo;
+export default Brand;

@@ -5,10 +5,11 @@
 // import Car from './component/Car.jsx'
 // import OneCar from './component/OneCar.jsx'
 // import CarSlick from './component/carSlick.jsx'
+
+import Contact from './page/Contact.jsx'
+import Brand from "./page/Brand.jsx";
 import CarGallery from "./page/CarGallery.jsx";
 import Testimonials from "./page/Testimonials.jsx";
-// import Logo from './component/Logo.jsx'
-// import Contact from './component/Contact.jsx'
 import Service from "./page/Service.jsx";
 import Title from "./component/Title.jsx";
 import About from "./page/About.jsx";
@@ -24,6 +25,8 @@ const App = () => {
       <Service />
       <CarGallery />
       <Testimonials />
+      <Brand />
+      <Contact/>  
     </>
   );
 };
@@ -36,8 +39,7 @@ export default App;
 <Cars /> 
 <Car /> 
 <CarGallery/>
-<Logo/>
-<Contact/> */
+ */
 }
 {
   /* <CarSlick/> */
