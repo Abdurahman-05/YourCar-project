@@ -1,0 +1,13 @@
+/* Adds spacing between each slide in the carousel */
+.slick-slide {
+  margin: 0 10px; /* Adjust this value to control the horizontal gap */
+}
+.slick-track {
+  display: flex ;
+}
+*{
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}

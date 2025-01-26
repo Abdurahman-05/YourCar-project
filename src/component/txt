@@ -1,0 +1,68 @@
+// import React from 'react'
+// import { useState } from 'react';
+// import hum from '../assets/humberger.png'
+// import CartMob from '../assets/cart.png'
+// import Background  from '../assets/Background.png';
+// import CartDis  from '../assets/Group.png';
+// import { setArgs } from '@craco/craco/dist/lib/args';
+
+
+// const Menulinks = [
+//   {id: 1,name: 'Home',link: '#'},
+//   {id: 2,name:'About',link:'#'},
+//   {id: 3,name:'Service',link:'#'},
+//   {id: 4,name:'Cars',link:'#'},
+//   {id: 5,name:'Contact us',link:'#'},
+//   ]
+
+  
+// const Navbar1 = () => {
+    
+//   const [ActiveLink,setActiveLink] = useState('Home');
+
+//   return (
+    
+//   <div className='bg-cover w-full h-screen bg-center' style={{
+//       backgroundImage:`url(${Background})`
+//      }}>
+
+//     <div className="h-[81px] px-6 md:px-14 md:bg-transparent bg-white w-full flex justify-between items-center">
+//         <div className="font-bold text-2xl text-secondary tracking-wide">
+//           Your<span className='font-normal' >Car</span>
+//         </div>
+//         <div className='md:flex space-x-8 md:items-center'>
+//          <ul className='hidden md:flex text-xl space-x-10 font-semibold text-white ' >
+//           {
+//             Menulinks.map((menu) =>(
+//               <li key={menu.id} >
+//                 <a href={menu.link}
+//                 onClick={()=>(setActiveLink(menu.name))}
+//                 style={{
+//                   backgroundColor: ActiveLink == menu.name?'#741906':'none',
+//                   padding:menu.name == ActiveLink
+//                   ?'5px':'none',
+//                 }}
+//                 >
+//                   {menu.name}</a>
+//               </li>
+//             ))
+//           }
+//          </ul>
+//         <div className='flex space-x-3 items-center'>
+//           <div className='p-2 relative'>
+//             <img className='w-[34px] h-[29px] md:hidden' src={CartMob} alt="" />
+//             <img className='w-[34px] h-[29px] hidden md:block ' src={CartDis} alt="" />
+//             <div className='absolute  bg-secondary md:bg-[#f8d7a4] rounded text-xs md:text-secondary inline-flex justify-center items-center text-white right-0 top-0  w-[21.5px] h-[21.5px]'>0</div>
+//           </div>
+//           <div className="md:hidden">
+//             <img src={hum} className='text-white w-[24px] h-[16px]' alt="" />
+//           </div>
+//         </div>
+//         </div>
+        
+//     </div>
+//   </div>
+//   )
+// }
+
+// export default Navbar1
