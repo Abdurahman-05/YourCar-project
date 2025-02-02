@@ -1,12 +1,12 @@
 // import React from 'react'
 
 // import Navbar from './component/Navbar.jsx'
-// import Cars from './component/Cars.jsx'
 // import Car from './component/Car.jsx'
 // import OneCar from './component/OneCar.jsx'
 // import CarSlick from './component/carSlick.jsx'
-
-import Contact from './page/Contact.jsx'
+import Silk from './page/Silk.jsx';
+import Cars from './page/Cars.jsx'
+import Contact from "./page/Contact.jsx";
 import Brand from "./page/Brand.jsx";
 import CarGallery from "./page/CarGallery.jsx";
 import Testimonials from "./page/Testimonials.jsx";
@@ -23,10 +23,12 @@ const App = () => {
       <Hero />
       <About />
       <Service />
+      <Cars />
       <CarGallery />
       <Testimonials />
       <Brand />
-      <Contact/>  
+      <Contact />
+      {/* <Silk/> */}
     </>
   );
 };
@@ -35,8 +37,6 @@ export default App;
 
 {
   /* 
-<Service/>
-<Cars /> 
 <Car /> 
 <CarGallery/>
  */

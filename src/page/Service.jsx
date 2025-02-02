@@ -10,17 +10,26 @@ const Service = () => {
   return (
     <div
       id="service"
-      className="relative w-full bg-cover bg-center flex flex-col space-y-16  md:space-y-0 pb-20"
+      className="relative w-full bg-cover bg-center flex bg-[#DFDFDF] flex-col space-y-16  md:space-y-0 pb-20"
       style={{
         backgroundImage: `url(${Serv})`,
       }}
     >
-      <div className="absolute top-0 left-0 w-full h-full bg-[#DFDFDF] -z-20">
-
-      <Title mainTitle="Service" subTitle="Service" color1 = "text-[#EBEBEB]" />
+     
+      {/* <Title mainTitle="Service" subTitle="Service" color1 = "text-[#EBEBEB]" />
+       */}
+       <div className="flex flex-col  relative ">
+        <div className={`text-[64px] md:text-[124px] font-lora text-center    text-[#EBEBEB] font-bold`}>
+          SERVICE
         </div>
+        <p className={`md:text-[48px] text-24px font-lora text-secondary font-semibold absolute bottom-[12px] left-[44%]`}>
+          service
+        </p>
+      </div>
 
-      <div className="flex  flex-col space-y-20 px-[18px] md:flex-row space-x-[76px]   md:space-y-0 pt-[86px] mx-10">
+    
+
+      <div className="flex  flex-col justify-center items-center space-y-[35px] md:space-y-0 px-[18px] md:flex-row space-x-[70px]    md:pt-[86px] mx-10">
         <OneService
           title="Car sales"
           description=" At YourCar, we offer a wide selection of luxury vehicles for sale. Whether you're in the market for a sleek sports car or a spacious SUV, we have the perfect vehicle to fit your needs."

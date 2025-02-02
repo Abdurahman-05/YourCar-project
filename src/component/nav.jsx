@@ -19,7 +19,7 @@ const nav = () => {
   const [ActiveLink, setActiveLink] = useState("Home");
   const [Cart, setCart] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-  
+
 
 
   return (
