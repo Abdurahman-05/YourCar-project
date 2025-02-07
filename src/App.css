@@ -1,11 +1,11 @@
 /* Adds spacing between each slide in the carousel */
-*{
+/* *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
+} */
 
-.carousel{
+/* .carousel{
   padding: 5rem;
   background-color: #fafafa;
   height: 100%;
@@ -16,15 +16,15 @@
    box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
    margin-bottom: 10px;
  
-}
+} */
 
 
-.slick-slide div{
+/* .slick-slide div{
   margin: 0 24px !important;
 }
 
 .slick-dots li button:before {
-/* margin-top:  87px; */
+/* margin-top:  87px; 
 color: #741906 !important;
 font-size: 1rem !important;
 }
@@ -33,4 +33,4 @@ font-size: 1rem !important;
 color:#741906 !important;
 background-color: transparent !important;
 
-}
+} */

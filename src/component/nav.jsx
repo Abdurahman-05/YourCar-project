@@ -23,7 +23,7 @@ const nav = () => {
 
 
   return (
-    <div className=" h-[60px]  md:static  w-full  px-[78px] md:px-14 bg-transparent flex justify-between items-center ">
+    <div className=" h-[5.5rem]   md:static  w-full  px-[78px] md:px-14 bg-transparent flex justify-between items-center ">
       <div className="font-bold text-2xl  font-lora text-secondary md:text-white tracking-wide">
         Your<span className="font-normal">Car</span>
       </div>
