@@ -4,7 +4,7 @@ const OneService = ({ title, description, image }) => {
       <img src={image} className= "w-[104px]" alt="Hand icon" />
       <div className="space-y-3 flex flex-col justify-center items-center">
       <h2 className="text-[30px]  font-bold text-[#12273d]">{title}</h2>
-      <p className="text-[24px] font-nunito text-secondary ">{description}</p>
+      <p className="text-[24px] font-nunito text-secondary lg:text-[18px]">{description}</p>
       </div>
     </div>
   );
