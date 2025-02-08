@@ -12,7 +12,7 @@ const About = () => {
           <h1 className="absolute  text-primary font-bold font-lora text-[34px] top-[-48px] left-[165px] sm:top-[-69px] sm:left-[-6px] sm:text-[64px] md:left-[-5px] md:top-[-86px] ">
             About
           </h1>
-          <p className="pt-11 text-[18px]   ">
+          <p className="pt-11 text-[20px] text-[#232730]  leading-[36px]  md:leading-[30px] lg:leading-[24px] ">
             YourCar is a luxury car dealership that offers a personalized and
             first-class experience to its clients. Our team of experienced
             professionals is dedicated to providing exceptional service and
@@ -22,7 +22,8 @@ const About = () => {
             maintained to the highest standards of quality and safety.
           </p>
 
-          <p className="pt-11 text-[18px] ">
+          <p className="pt-11 text-[20px] text-[#232730]  leading-[36px]  md:leading-[30px] lg:leading-[24px] ">
+
             At YourCar, we are committed to creating a stress-free and enjoyable
             car buying experience. We understand that purchasing a luxury car
             can be a significant investment, which is why we offer flexible
