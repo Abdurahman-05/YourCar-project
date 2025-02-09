@@ -21,7 +21,7 @@ const Service = () => {
         SERVICE
       </h1>
         <div className="relative font-lora">
-          <h1 className="absolute  text-secondary font-bold font-lora text-[34px] top-[-54px] left-1/2 sm:top-[-85px] sm:text-[64px]  md:top-[-95px]  transform -translate-x-1/2">
+          <h1 className="absolute  text-secondary font-bold font-lora text-[34px] top-[-45px] left-[50%] sm:top-[-85px] sm:text-[64px]  md:top-[-95px]  transform -translate-x-1/2">
             service
           </h1>
         </div>

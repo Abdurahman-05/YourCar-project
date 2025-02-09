@@ -5,7 +5,7 @@
 // import OneCar from './component/OneCar.jsx'
 // import CarSlick from './component/carSlick.jsx'
 import Silk from './page/Silk.jsx';
-// import Cars from './page/Cars.jsx'
+import Cars from './page/Cars.jsx'
 import Contact from "./page/Contact.jsx";
 import Brand from "./page/Brand.jsx";
 import CarGallery from "./page/CarGallery.jsx";
@@ -23,7 +23,7 @@ const App = () => {
       <Hero />
       <About />
       <Service />
-      {/* <Cars /> */}
+      <Cars />
       <CarGallery />
       <Testimonials />
       <Brand />
