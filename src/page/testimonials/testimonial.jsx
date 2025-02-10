@@ -6,7 +6,7 @@ import Title from "../../component/Title";
 const testimonial = () => {
   return (
     <>
-      <div className=" bg-white relative  mx-[30px] py-[60px] [@media(min-width:850px)]:mx-[150px]">
+      <div className=" bg-white relative  mx-[30px] py-[60px] md:mx-[150px] lg:mx-[300px]">
         <p
           className="font-medium font-lato italic text-[#272727]
           text-center  leading-[25px] text-[15px] md:text-[24px] md:leading-[36px] mx-[65px] mb-[42px] "
