@@ -33,40 +33,32 @@ color:#741906 !important;
 background-color: transparent !important;
 
 } */
-
-.slider-container {
-  width: 100%;
-  overflow: hidden;
-}
-
-.slick-slide > div {
-  display: flex;
-  justify-content: center;
-}
-
-.slick-prev,
-.slick-next {
+/* 
+.slick-prev, .slick-next {
   z-index: 10;
   width: 40px;
   height: 40px;
-  display: block !important; /* Ensure it's visible */
 }
 
 .slick-prev {
-  left: 10px !important; /* Adjust position */
+  
+  left: 30px !important;
 }
 
 .slick-next {
-  right: 10px !important; /* Adjust position */
+  right: 30px !important;
 }
-.slider-container {
-  width: 100%;
-  overflow: hidden;
-  position: relative;/* Needed for arrow positioning */
-}
+.slick-next::before{
+height: vh !important;
+width: vw !important;
+background-color: bisque !important;
+} */
 
-.slick-prev:before,
-.slick-next:before {
-  color: black !important;  /* Change to a visible color */
-  font-size: 30px; /* Make arrows larger */
+/* 
+/ */
+
+
+.slick-dots li.slick-active button:before {
+  opacity: .75;
+  color: #741906;
 }

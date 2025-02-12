@@ -5,10 +5,10 @@ import React from "react";
 // import SvgOne from "../assets/Cars/Seats.svg";
 // import SvgTwo from "../assets/Cars/Luggage.svg";
 import Car from "./oneCar";
-import data from "./data.json";
+import data from "../data.json";
 import Slider from "react-slick";
-import'../app.css'
-import img from '../assets/arrow.png'
+import'./style.css'
+import img from '../../assets/arrow.png'
 
 const Cars = () => {
   const dataArray = [...data.cars];
@@ -21,6 +21,7 @@ const Cars = () => {
     slidesToShow: 3,
     slidesToScroll: 1,
     initialSlide: 0,
+    
     nextArrow: (
       <div>
         <div className=

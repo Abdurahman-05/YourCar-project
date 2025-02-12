@@ -3,9 +3,23 @@ import Car from "../../assets/comment/car4.svg";
 import Star from "../../assets/comment/Star.png";
 import Title from "../../component/Title";
 import Testimonial from "./testimonial";
+import Slider from "react-slick";
+import './style.css'
+
+
 const Testimonials = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    arrows: false,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    
+  };
+
   return (
-    <div className="w-full py-24 font-bold text-white h-fit font-lora bg-secondary">
+    <div className="w-full pt-24 font-bold text-white pb-44 h-fit font-lora bg-secondary">
       <div className="flex flex-col  mb-[55px]">
         <h1 className="font-bold font-lora text-center text-[40px]   sm:text-[72px] md:text-[90px]  text-[#EBEBEB] opacity-10 lg:text-[124px]">
           TESTIMONIALS
@@ -16,9 +30,19 @@ const Testimonials = () => {
           </h1>
         </div>
       </div>
-      
-     <Testimonial/>
-      
+      <div className="slider-container">
+        <Slider {...settings}>
+          <Testimonial />
+          <Testimonial />
+          <Testimonial />
+          <Testimonial />
+          <Testimonial />
+          <Testimonial />
+          <Testimonial />
+          <Testimonial />
+          <Testimonial />
+        </Slider>
+      </div>
     </div>
   );
 };
