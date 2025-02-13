@@ -23,15 +23,15 @@ const nav = () => {
 
 
   return (
-    <div className=" h-[5.5rem]   md:static  w-full  px-[78px] md:px-14 bg-transparent flex justify-between items-center ">
-      <div className="font-bold text-2xl  font-lora text-secondary md:text-white tracking-wide">
+    <div className=" h-[5.5rem] bg-white sm:bg-transparent  md:static  w-full px-5  sm:px-[78px] md:px-14 bg-transparent flex justify-between items-center ">
+      <div className="text-[34px] font-bold tracking-wide font-lora text-secondary  sm:text-[45px] sm:text-white">
         Your<span className="font-normal">Car</span>
       </div>
 
       <div className="md:flex space-x-8 font-lora text-[24px] md:items-center">
-        <ul className="hidden md:flex text-xl space-x-10 font-semibold text-white ">
+        <ul className="hidden space-x-10 text-xl font-semibold text-white md:flex ">
           {Menulinks.map((items, index) => (
-            <div className=" " key={index}>
+            <div className="" key={index}>
               <li>
                 <a
                   href={items.link}
@@ -47,8 +47,8 @@ const nav = () => {
           ))}
         </ul>
 
-        <div className="flex space-x-3 items-center cursor-pointer">
-          <div className="p-2 relative " onClick={() => setCart(!Cart)}>
+        <div className="flex items-center space-x-3 cursor-pointer">
+          <div className="relative p-2 " onClick={() => setCart(!Cart)}>
             <img
               className="w-[34px] h-[29px] md:hidden"
               src={Cart ? ActiveCart : CartMob}
@@ -69,7 +69,7 @@ const nav = () => {
             onClick={() => {
               setIsOpen(!isOpen);
             }}
-            className="md:hidden cursor-pointer"
+            className="cursor-pointer md:hidden"
           >
             <img src={hum} className="text-white w-[24px] h-[16px]" alt="" />
           </div>
