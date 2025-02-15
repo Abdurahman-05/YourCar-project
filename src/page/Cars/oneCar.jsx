@@ -11,7 +11,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 const Car = ({ CarsData }) => {
   return (
-    <div className=" min-[378px] min-h-[500px]  flex p-[3.6rem]  [@media(min-width:1040px)]:pl-[1px]">
+    <div className=" min-[378px] min-h-[500px]  flex px-[3.6rem]  [@media(min-width:1040px)]:pl-[1px]">
       <div className="font-nunito font-light text-[12px] bg-white py-[50px] mx-auto shadow-2xl ">
         <div>
           <img

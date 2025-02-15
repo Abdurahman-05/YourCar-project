@@ -23,9 +23,9 @@ const Cars = () => {
     initialSlide: 0,
     
     nextArrow: (
-      <div>
+      <div className="relative">
         <div className=
-        "w-[40px] h-[40px] flex justify-center rounded-[20px] bg-primary">
+        "w-[40px] h-[40px] flex justify-center rounded-[20px] bg-primary absolute">
           <button
             className=""
             // onClick={handleGoToClick(--currentSlid)}
@@ -110,7 +110,7 @@ const Cars = () => {
           cars
         </h3>
       </div>
-      <div className="slider-container">
+      <div className="slider-container w-[90%] mx-auto">
         <Slider {...settings}>
             {dataArray.map((CarsData, index) => (
               <div key={index} className=''>

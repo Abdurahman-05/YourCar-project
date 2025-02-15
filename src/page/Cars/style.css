@@ -3,3 +3,37 @@
   opacity: 1;
 
 }
+/* .slick-slider {
+  overflow: hidden;
+} */
+
+.slider-wrapper {
+  position: relative;
+  overflow: hidden; /* Prevents horizontal scrollbar */
+}
+
+.slick-slider {
+  overflow: visible; /* Allows arrows to be visible */
+}
+
+.slick-prev, .slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+   /* Optional: adds a background */
+  border-radius: 50%;
+  
+}
+
+.slick-prev {
+  left: -64px;
+  
+}
+
+.slick-next {
+  right: -52px;
+
+}
