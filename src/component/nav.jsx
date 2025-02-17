@@ -1,11 +1,11 @@
 import React from "react";
 import { useState } from "react";
 import hum from "../assets/nav/humberger.png";
-import CartMob from "../assets/nav/cart.png";
+import CartMob from "../assets/nav/cart.svg";
 import Background from "../assets/nav/Background.png";
 import CartDis from "../assets/nav/Group.png";
 import ActiveCart from "../assets/nav/ActiveCart.png";
-
+import { useSelector } from "react-redux";
 
 const nav = () => {
   const Menulinks = [
@@ -15,12 +15,11 @@ const nav = () => {
     { name: "Cars", link: "#cars" },
     { name: "Contact us", link: "#contact" },
   ];
+  const amount = useSelector((store) => store.cars.amount)
 
   const [ActiveLink, setActiveLink] = useState("Home");
   const [Cart, setCart] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-
-
 
   return (
     <div className=" h-[5.5rem] bg-white sm:bg-transparent  md:static  w-full px-5  sm:px-[78px] md:px-14 bg-transparent flex justify-between items-center ">
@@ -59,6 +58,7 @@ const nav = () => {
               src={Cart ? ActiveCart : CartDis}
               alt=""
             />
+            <div className="h-[27px] w-[23px] flex justify-center items-center text-white rounded-md font-lora bg-secondary absolute top-[-12px] right-[0px] text-[17px]">{amount}</div>
             {/* {totalItems > 0 && (
                     <div className="absolute font-lora  bg-secondary md:bg-[#f8d7a4] rounded text-xs md:text-secondary inline-flex justify-center items-center text-white right-0 top-0  w-[21.5px] h-[21.5px]">
                       {totalItems}

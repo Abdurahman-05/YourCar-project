@@ -39,7 +39,7 @@ const Hero = () => {
             Find the perfect car<br/> for you at YourCar.
           </div>
           
-          <div className=" w-[450px] text-center text-[20px]  bg-[#0E0C0B] bg-opacity-[46%] sm:
+          <div className=" max-w-[450px] text-center text-[20px]  bg-[#0E0C0B] bg-opacity-[46%] sm:
   font-bold leading-[40.96px] pr-[12px] sm:bg-transparent sm:text-end sm:text-[32px] mt-[110px] sm:mt-[45px] md:mt-[22px] sm-text-end">
            <p className="ml-auto"> 
             We offer a wide range of cars that cater to your needs and budget.
