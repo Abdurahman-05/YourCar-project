@@ -9,8 +9,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
-import { incrementAmount } from "../../features/slice";
-import { decrimentAmount } from "../../features/slice";
+import { incrementAmount ,decrimentAmount  } from "../../features/slice";
+
 const Car = ({ CarsData }) => {
   const dispatch = useDispatch();
   const name = CarsData.name;
@@ -50,9 +50,9 @@ const Car = ({ CarsData }) => {
             <div className="flex items-center justify-center">
               <button
                 onClick={() => {
-                  if (CarsData.amount !== 0) {
+                  
                     dispatch(decrimentAmount({ name }));
-                  }
+                  
                 }}
                 className="h-[35px] w-[35px] bg-primary text-white rounded-tl-[4px] rounded-bl-[4px]"
               >
