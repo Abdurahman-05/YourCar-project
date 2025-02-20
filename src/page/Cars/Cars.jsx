@@ -9,10 +9,11 @@ import data from "../data.json";
 import Slider from "react-slick";
 import'./style.css'
 import img from '../../assets/arrow.png'
+import { useSelector } from "react-redux";
+
 
 const Cars = () => {
-  const dataArray = [...data.cars];
-
+  const products= useSelector((store) => store.Cars.products);
   var settings = {
     arrows:true,
     dots: true,
@@ -112,8 +113,8 @@ const Cars = () => {
       </div>
       <div className="slider-container w-[90%] mx-auto">
         <Slider {...settings}>
-            {dataArray.map((CarsData, index) => (
-              <div key={index} className=''>
+            {products.map((CarsData, i) => (
+              <div key={i} className=''>
                 <Car CarsData={CarsData} />
               </div>
             ))}

@@ -15,7 +15,8 @@ const nav = () => {
     { name: "Cars", link: "#cars" },
     { name: "Contact us", link: "#contact" },
   ];
-  const amount = useSelector((store) => store.cars.amount)
+
+  const amount = useSelector((store) => store.Cars.amount)
 
   const [ActiveLink, setActiveLink] = useState("Home");
   const [Cart, setCart] = useState(false);

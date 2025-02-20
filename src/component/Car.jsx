@@ -7,7 +7,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import "../App.css";
-import { useDispatch, useSelector } from "react-redux";
+
 
 const data = [
   {
@@ -103,7 +103,7 @@ const Car = () => {
         {items.map((item) => (
           <div
             key={item.id}
-            className=" w-full md:w-1/2 mx-auto  drop-shadow-md shadow-black bg-white flex flex-col items-center text-center  p-10  space-y-2  "
+            className="flex flex-col items-center w-full p-10 mx-auto space-y-2 text-center bg-white  md:w-1/2 drop-shadow-md shadow-black"
           >
             <img src={item.image} alt="" />
             <h1 className="text-primary font-bold text-[24px]">
@@ -113,18 +113,18 @@ const Car = () => {
             <p className="text-[12px] leading-6 font-nunito font-light pt-2">
               {item.discription}
             </p>
-            <div className="w-full flex justify-between items-center pt-5 font-nunito text-primary">
+            <div className="flex items-center justify-between w-full pt-5 font-nunito text-primary">
               <div className="flex flex-col w-full ">
-                <div className="flex space-x-3 items-center">
+                <div className="flex items-center space-x-3">
                   <img src={Seats} alt="" />
                   <p>{item.numberOfSeats}</p>
                 </div>
-                <div className="flex space-x-4  items-center">
+                <div className="flex items-center space-x-4">
                   <img src={Luggage} alt="" />
                   <p>{item.numberOfLuggege}</p>
                 </div>
               </div>
-              <div className="flex justify- items-center mr-10">
+              <div className="flex items-center mr-10 justify-">
                 <button
                   onClick={() => decriment(item.id)}
                   className="w-[30px] h-[30px]  bg-primary text-white  rounded-l-[4px]"

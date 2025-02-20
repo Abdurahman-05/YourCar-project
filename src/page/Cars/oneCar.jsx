@@ -5,14 +5,18 @@ import Slider from "react-slick";
 import carsData from "../data.json";
 import SvgOne from "../../assets/Cars/Seats.svg";
 import SvgTwo from "../../assets/Cars/Luggage.svg";
-
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import { useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
+import { incrementAmount } from "../../features/slice";
+import { decrimentAmount } from "../../features/slice";
 const Car = ({ CarsData }) => {
+  const dispatch = useDispatch();
+  const name = CarsData.name;
   return (
-    <div className=" min-[378px] min-h-[500px]  flex px-[3.6rem]  [@media(min-width:1040px)]:pl-[1px]">
-      <div className="font-nunito font-light text-[12px] bg-white py-[50px] mx-auto shadow-2xl ">
+    <div className="min-w-[450px] h-[640px] flex px-[3.6rem] py-4 [@media(min-width:1040px)]:pl-[1px]">
+      <div className="font-nunito font-light text-[12px] bg-white py-[50px] mx-auto shadow-2xl px-6">
         <div>
           <img
             src={CarsData.image}
@@ -44,11 +48,25 @@ const Car = ({ CarsData }) => {
               </div>
             </div>
             <div className="flex items-center justify-center">
-              <button className="px-[10px] bg-primary text-white rounded-tl-[4px] rounded-bl-[4px]">
+              <button
+                onClick={() => {
+                  if (CarsData.amount !== 0) {
+                    dispatch(decrimentAmount({ name }));
+                  }
+                }}
+                className="h-[35px] w-[35px] bg-primary text-white rounded-tl-[4px] rounded-bl-[4px]"
+              >
                 -
               </button>
-              <div className="bg-white px-[10px]">0</div>
-              <button className="px-[10px] bg-primary rounded-tr-[4px] rounded-br-[4px] text-white">
+              <div className="bg-white h-[35px] w-[35px] flex justify-center items-center text-[24px] text-secondary">
+                {CarsData.amount}
+              </div>
+              <button
+                onClick={() => {
+                  dispatch(incrementAmount({ name }));
+                }}
+                className="h-[35px] w-[35px] bg-primary rounded-tr-[4px] rounded-br-[4px] text-white"
+              >
                 +
               </button>
             </div>

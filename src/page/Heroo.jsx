@@ -19,10 +19,10 @@ const Menulinks = [
 const Hero = () => {
   const [ActiveLink, setActiveLink] = useState("Home");
   const [Cart, setCart] = useState(false);
-  // const products = useSelector((state) => state.products);
+  
   const [isOpen, setIsOpen] = useState(false);
 
-  // const totalItems = products.reduce((acc, product) => acc + product.count, 0);
+  
 
   return (
     <div
