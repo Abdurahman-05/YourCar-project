@@ -7,7 +7,7 @@ import del from "../assets/nav/delet.svg";
 import CartDis from "../assets/nav/Group.png";
 import ActiveCart from "../assets/nav/ActiveCart.png";
 import { useSelector, useDispatch } from "react-redux";
-import { incrementAmount, decrimentAmount } from "../features/slice";
+import { incrementAmount, decrimentAmount ,removeAmount} from "../features/slice";
 
 const nav = () => {
   const Menulinks = [
@@ -28,7 +28,7 @@ const nav = () => {
 
   return (
     <div className="fixed md:static  h-[5.5rem] bg-white z-50 md:bg-transparent   w-full px-5  sm:px-[78px] md:px-14 bg-transparent flex justify-between items-center ">
-      <div className="text-[34px] font-bold tracking-wide font-lora text-secondary  sm:text-[45px] sm:text-white">
+      <div className="text-[34px] font-bold tracking-wide font-lora text-secondary  sm:text-[45px] ">
         Your<span className="font-normal">Car</span>
       </div>
 
@@ -137,7 +137,9 @@ const nav = () => {
                   >
                     +
                   </button>
-                <div className="pl-4">
+                <div onClick={() => {
+                      dispatch(removeAmount({ name }));
+                    }}  className="pl-4">
                   <img className="h-[35px] w-[35px]" src={del} alt="" />
                 </div>
                 </div>

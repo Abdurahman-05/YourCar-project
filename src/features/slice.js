@@ -24,9 +24,17 @@ const carSlice = createSlice({
       console.log("Updated amount:", item.amount);
       console.log("Updated total:", state.total);
     },
+    removeAmount: (state, { payload }) => {
+      const item = state.products.find((items) => items.name == payload.name);
+    
+        item.amount = 0;
+        state.total = state.products.reduce((sum, car) => sum + car.amount, 0);
+      console.log("Updated amount:", item.amount);
+      console.log("Updated total:", state.total);
+    }
   },
 });
-export const { decrimentAmount, incrementAmount } = carSlice.actions;
+export const { decrimentAmount, incrementAmount ,removeAmount} = carSlice.actions;
 
 export default carSlice.reducer;
 
