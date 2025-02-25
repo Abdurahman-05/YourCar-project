@@ -1,0 +1,24 @@
+
+.container{
+@apply fixed md:static md:bg-transparent  h-[5.5rem] bg-white z-10   w-full px-5  sm:px-[78px] md:px-14  flex justify-between items-center
+}
+
+.companyLogo{
+  @apply text-[34px] font-bold tracking-wide font-lora text-secondary  sm:text-[45px]
+}
+.linkContainer{
+  @apply md:flex space-x-8 font-lora text-[24px] md:items-center
+}
+.link{
+  @apply hidden space-x-10 text-xl font-semibold text-white md:flex 
+}
+.menuCommon{
+  @apply z-10 w-[350px] pt-[160px] h-full  lg:flex-row lg:static md:hidden  flex flex-col   text-white bg-[#12273DF2] 
+  fixed right-0  transform transition-transform
+}
+.menuOpen{
+  @apply translate-x-0 ;
+}
+.menuClose{
+  @apply translate-x-full ;
+}

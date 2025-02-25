@@ -33,7 +33,7 @@ const Hero = () => {
     >
       <Nav />
 
-      <div className="items-end justify-center w-full text-white font-lora sm:pr-[78px] sm:p-[2.5rem]">
+      <div className="items-end pt-[95px]  justify-center w-full text-white font-lora sm:pr-[78px] ">
         <div className="flex flex-col items-center sm:items-end">
           <div className="font-bold text-[34px] text-center whitespace-nowrap sm:text-end sm:text-[45px] lg:text-[85px] mt-[60px] sm:mt-[20px]  md:text-[64px] sm:px-0 flex ">
             Find the perfect car<br/> for you at YourCar.

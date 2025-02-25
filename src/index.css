@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-/* 
+/* /* 
 primery- #741906
 secondory- #12273d
 */
-@layer base {
+/* @layer base {
   * {
     padding: 0;
     margin: 0;
@@ -16,4 +16,5 @@ secondory- #12273d
   
     
   }
-}
+} */ 
+

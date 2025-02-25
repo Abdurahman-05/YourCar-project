@@ -7,6 +7,9 @@ import del from "../assets/nav/delet.svg";
 import CartDis from "../assets/nav/Group.png";
 import ActiveCart from "../assets/nav/ActiveCart.png";
 import { useSelector, useDispatch } from "react-redux";
+import classes from "./nav.module.css";
+import { FaBars, FaTimes } from "react-icons/fa";
+
 import {
   incrementAmount,
   decrimentAmount,
@@ -21,8 +24,8 @@ const nav = () => {
     { name: "Cars", link: "#cars" },
     { name: "Contact us", link: "#contact" },
   ];
-  const dispatch = useDispatch();
 
+  const dispatch = useDispatch();
   const products = useSelector((store) => store.Cars.products);
   const total = useSelector((store) => store.Cars.total);
 
@@ -30,15 +33,17 @@ const nav = () => {
   const [Cart, setCart] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
+  // fixed md:static  h-[5.5rem] bg-white z-50 md:bg-transparent   w-full px-5  sm:px-[78px] md:px-14 bg-transparent flex justify-between items-center
+
   return (
-    <div className="">
-      <div className="fixed md:static  h-[5.5rem] bg-white z-50 md:bg-transparent   w-full px-5  sm:px-[78px] md:px-14 bg-transparent flex justify-between items-center ">
-        <div className="text-[34px] font-bold tracking-wide font-lora text-secondary  sm:text-[45px] ">
+    <div className="relative">
+      <div className={classes.container}>
+        <div className={classes.companyLogo}>
           Your<span className="font-normal">Car</span>
         </div>
 
-        <div className="md:flex space-x-8 font-lora text-[24px] md:items-center">
-          <ul className="hidden space-x-10 text-xl font-semibold text-white md:flex ">
+        <div className={classes.linkContainer}>
+          <ul className={classes.link}>
             {Menulinks.map((items, index) => (
               <div className="" key={index}>
                 <li>
@@ -81,40 +86,57 @@ const nav = () => {
               onClick={() => {
                 setIsOpen(!isOpen);
               }}
-              className="cursor-pointer md:hidden"
+              className="cursor-pointer md:hidden "
             >
-              <img src={hum} className="text-white w-[24px] h-[16px]" alt="" />
+              {/* <img src={hum} className="text-white w-[24px] h-[16px]" alt="" /> */}
+              {!isOpen? <div className=""><FaBars size={30} color="#12273d" /></div>:<div className="ml-12 w-30" h-16> </div>}
+              
             </div>
           </div>
         </div>
       </div>
 
       <div
-        className={` z-50 w-[243px] pt-[195px] h-full  lg:flex-row lg:static md:hidden  flex flex-col   text-white bg-[#12273DF2] 
-         fixed right-0  transform transition-transform  `}
-      >
-        {/* ${
-           isOpen ? "translate-x-0" : "translate-x-full"
-         } */}
+        className={` ${classes.menuCommon}  ${
+          isOpen ? classes.menuOpen : classes.menuClose
+        }`}
+        >
+          
+           {isOpen && (
+          <div className="absolute top-[10px] right-[-256px] flex w-full p-4 jstify-end">
+            <FaTimes
+              size={45}
+              color="#741906"
+              className="cursor-pointer"
+              onClick={() => setIsOpen(false)}
+            />
+          </div>
+        )}
         {Menulinks.map((menu, index) => (
-          <a href={menu.link}  className={` p-[15px] ${
-            ActiveLink == menu.name ? "bg-primary " : "p-0"
-          }`} onClick={() => setActiveLink(menu.name)}  key={index}>
+          <a
+          href={menu.link}
+          className={`text-2xl font-lora py-[20px] px-8 ${
+            ActiveLink == menu.name ? "bg-primary " : ""
+          }`}
+          onClick={() => setActiveLink(menu.name)}
+          key={index}
+          >
             {menu.name}
           </a>
         ))}
       </div>
       <div
-        className={` z-20 w-[450px]  flex flex-col pt-10  text-primary  bg-secondary  h-screen mt-[5.5rem] fixed right-0 top-[0px]  transform transition-transform ${
+        className={` z-20 w-[450px]  flex flex-col pt-10  text-primary  bg-secondary  h-screen mt-[5.5rem] fixed right-0 top-[0px]  transform transition-transform  ${
           Cart ? "translate-x-0" : "translate-x-full"
-        }  `}
+        }   `}
       >
-        <div className="flex flex-col space-y-4 overflow-auto px-[24px]">
+       
+        <div className="flex flex-col space-y-4 overflow-auto px-[24px] pb-52">
           {products.map((item) => {
             const name = item.name;
             return (
               <div
-                className={`w-full bg-white h-fit px-[24px] py-6 
+                className={`w-full bg-white h-fit  px-[24px] py-6 
               ${item.amount > 0 ? "static" : "hidden"} `}
               >
                 <div className="flex justify-between ">
@@ -166,3 +188,126 @@ const nav = () => {
 };
 
 export default nav;
+
+// import React from "react";
+// import { useState } from "react";
+// import CartMob from "../assets/nav/cart.svg";
+// import CartDis from "../assets/nav/Group.png";
+// import ActiveCart from "../assets/nav/ActiveCart.png";
+// import del from "../assets/nav/delet.svg";
+// import { useSelector, useDispatch } from "react-redux";
+// import classes from "./nav.module.css";
+// import { FaBars, FaTimes } from "react-icons/fa";
+
+// import {
+//   incrementAmount,
+//   decrimentAmount,
+//   removeAmount,
+// } from "../features/slice";
+
+// const nav = () => {
+//   const Menulinks = [
+//     { name: "Home", link: "#home" },
+//     { name: "About", link: "#about" },
+//     { name: "Service", link: "#service" },
+//     { name: "Cars", link: "#cars" },
+//     { name: "Contact us", link: "#contact" },
+//   ];
+
+//   const dispatch = useDispatch();
+//   const products = useSelector((store) => store.Cars.products);
+//   const total = useSelector((store) => store.Cars.total);
+
+//   const [ActiveLink, setActiveLink] = useState("Home");
+//   const [Cart, setCart] = useState(false);
+//   const [isOpen, setIsOpen] = useState(false);
+
+//   return (
+//     <div className="relative">
+//       <div className={classes.container}>
+//         <div className={classes.companyLogo}>
+//           Your<span className="font-normal">Car</span>
+//         </div>
+
+//         <div className={classes.linkContainer}>
+//           <ul className={classes.link}>
+//             {Menulinks.map((items, index) => (
+//               <div className="" key={index}>
+//                 <li>
+//                   <a
+//                     href={items.link}
+//                     className={`p-[7px] rounded-[5px] ${
+//                       ActiveLink == items.name ? "bg-primary p-[10px]" : "p-0"
+//                     }`}
+//                     onClick={() => setActiveLink(items.name)}
+//                   >
+//                     {items.name}
+//                   </a>
+//                 </li>
+//               </div>
+//             ))}
+//           </ul>
+
+//           <div className="flex items-center space-x-3 cursor-pointer">
+//             <div className="relative p-2" onClick={() => setCart(!Cart)}>
+//               <img
+//                 className="w-[34px] h-[29px] md:hidden"
+//                 src={Cart ? ActiveCart : CartMob}
+//                 alt=""
+//               />
+//               <img
+//                 className="w-[34px] h-[29px] hidden md:block"
+//                 src={Cart ? ActiveCart : CartDis}
+//                 alt=""
+//               />
+//               <div className="h-[27px] w-[23px] flex justify-center items-center text-white rounded-md font-lora bg-secondary absolute top-[-12px] right-[0px] text-[17px]">
+//                 {total}
+//               </div>
+//             </div>
+//             <div
+//               onClick={() => {
+//                 setIsOpen(!isOpen);
+//               }}
+//               className="cursor-pointer md:hidden"
+//             >
+//               {!isOpen && <FaBars size={30} color="#12273d" />}
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+
+//       <div
+//         className={` ${classes.menuCommon} ${
+//           isOpen ? classes.menuOpen : classes.menuClose
+//         } `}
+//       >
+//         {isOpen && (
+//           <div className="flex justify-end w-full p-4">
+//             <FaTimes
+//               size={30}
+//               color="red"
+//               className="cursor-pointer"
+//               onClick={() => setIsOpen(false)}
+//             />
+//           </div>
+//         )}
+
+//         {Menulinks.map((menu, index) => (
+//           <a
+//             href={menu.link}
+//             className={`text-2xl font-lora py-[20px] px-8 ${
+//               ActiveLink == menu.name ? "bg-primary" : ""
+//             }`}
+//             onClick={() => setActiveLink(menu.name)}
+//             key={index}
+//           >
+//             {menu.name}
+//           </a>
+//         ))}
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default nav;
+
