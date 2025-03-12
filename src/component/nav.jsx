@@ -33,6 +33,28 @@ const nav = () => {
   const [Cart, setCart] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
+  //   const scrollHandler = () => {
+  //     // setIsOpen(!isOpen);
+  //     // document.querySelector("html").style.overflow = isOpen
+  //     // ? "hidden"
+  //     // : "auto";
+  //     setIsOpen((!isOpen) =>
+  //       const newIsOpen = !isOpen;
+  //       document.querySelector("html").style.overflow = newIsOpen ? "hidden" : "auto";
+  //       return newIsOpen;
+
+  // }
+  const scrollHandler = () => {
+    setIsOpen((prevIsOpen) => {
+      const newIsOpen = !prevIsOpen;
+      console.log("isOpen:", newIsOpen); // Debugging
+      document.querySelector("html").style.overflow = newIsOpen
+        ? "hidden"
+        : "auto";
+      return newIsOpen;
+    });
+  };
+
   // fixed md:static  h-[5.5rem] bg-white z-50 md:bg-transparent   w-full px-5  sm:px-[78px] md:px-14 bg-transparent flex justify-between items-center
 
   return (
@@ -83,14 +105,19 @@ const nav = () => {
                   )} */}
             </div>
             <div
-              onClick={() => {
-                setIsOpen(!isOpen);
-              }}
+              onClick={() => setIsOpen(!isOpen)}
               className="cursor-pointer md:hidden "
             >
               {/* <img src={hum} className="text-white w-[24px] h-[16px]" alt="" /> */}
-              {!isOpen? <div className=""><FaBars size={30} color="#12273d" /></div>:<div className="ml-12 w-30" h-16> </div>}
-              
+              {!isOpen ? (
+                <div className="">
+                  <FaBars size={30} color="#12273d" />
+                </div>
+              ) : (
+                <div className="ml-12 w-30" h-16>
+                  {" "}
+                </div>
+              )}
             </div>
           </div>
         </div>
@@ -100,9 +127,8 @@ const nav = () => {
         className={` ${classes.menuCommon}  ${
           isOpen ? classes.menuOpen : classes.menuClose
         }`}
-        >
-          
-           {isOpen && (
+      >
+        {isOpen && (
           <div className="absolute top-[10px] right-[-256px] flex w-full p-4 jstify-end">
             <FaTimes
               size={45}
@@ -114,12 +140,12 @@ const nav = () => {
         )}
         {Menulinks.map((menu, index) => (
           <a
-          href={menu.link}
-          className={`text-2xl font-lora py-[20px] px-8 ${
-            ActiveLink == menu.name ? "bg-primary " : ""
-          }`}
-          onClick={() => setActiveLink(menu.name)}
-          key={index}
+            href={menu.link}
+            className={`text-2xl font-lora py-[20px] px-8 ${
+              ActiveLink == menu.name ? "bg-primary " : ""
+            }`}
+            onClick={() => setActiveLink(menu.name)}
+            key={index}
           >
             {menu.name}
           </a>
@@ -130,7 +156,6 @@ const nav = () => {
           Cart ? "translate-x-0" : "translate-x-full"
         }   `}
       >
-       
         <div className="flex flex-col space-y-4 overflow-auto px-[24px] pb-52">
           {products.map((item) => {
             const name = item.name;
@@ -310,4 +335,3 @@ export default nav;
 // };
 
 // export default nav;
-
