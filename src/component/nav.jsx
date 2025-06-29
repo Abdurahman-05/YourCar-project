@@ -33,26 +33,10 @@ const nav = () => {
   const [Cart, setCart] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
-  //   const scrollHandler = () => {
-  //     // setIsOpen(!isOpen);
-  //     // document.querySelector("html").style.overflow = isOpen
-  //     // ? "hidden"
-  //     // : "auto";
-  //     setIsOpen((!isOpen) =>
-  //       const newIsOpen = !isOpen;
-  //       document.querySelector("html").style.overflow = newIsOpen ? "hidden" : "auto";
-  //       return newIsOpen;
 
-  // }
   const scrollHandler = () => {
-    setIsOpen((prevIsOpen) => {
-      const newIsOpen = !prevIsOpen;
-      console.log("isOpen:", newIsOpen); // Debugging
-      document.querySelector("html").style.overflow = newIsOpen
-        ? "hidden"
-        : "auto";
-      return newIsOpen;
-    });
+    setIsOpen(((prevState) => !prevState));
+    document.querySelector("html").style.overflow = isOpen ? "auto" : "hidden" ;
   };
 
   // fixed md:static  h-[5.5rem] bg-white z-50 md:bg-transparent   w-full px-5  sm:px-[78px] md:px-14 bg-transparent flex justify-between items-center

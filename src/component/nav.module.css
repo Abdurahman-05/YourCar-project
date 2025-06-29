@@ -1,6 +1,6 @@
 
 .container{
-@apply fixed md:static md:bg-transparent  h-[5.5rem] bg-white z-10   w-full px-5  sm:px-[78px] md:px-14  flex justify-between items-center
+@apply fixed z-[1000] md:static md:bg-transparent  h-[5.5rem] bg-white    w-full px-5  sm:px-[78px] md:px-14  flex justify-between items-center
 }
 
 .companyLogo{
