@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import CartMob from "../assets/nav/cart.png";
+import CartMob from "../assets/nav/Cart.png";
 import del from "../assets/nav/delet.svg";
 import CartDis from "../assets/nav/Group.png";
 import ActiveCart from "../assets/nav/ActiveCart.png";
