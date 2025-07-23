@@ -1,8 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import hum from "../assets/nav/humberger.png";
-import CartMob from "../assets/nav/cart.svg";
-import Background from "../assets/nav/Background.png";
+import CartMob from "../assets/nav/cart.png";
 import del from "../assets/nav/delet.svg";
 import CartDis from "../assets/nav/Group.png";
 import ActiveCart from "../assets/nav/ActiveCart.png";
@@ -33,10 +31,9 @@ const nav = () => {
   const [Cart, setCart] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
-
   const scrollHandler = () => {
-    setIsOpen(((prevState) => !prevState));
-    document.querySelector("html").style.overflow = isOpen ? "auto" : "hidden" ;
+    setIsOpen((prevState) => !prevState);
+    document.querySelector("html").style.overflow = isOpen ? "auto" : "hidden";
   };
 
   // fixed md:static  h-[5.5rem] bg-white z-50 md:bg-transparent   w-full px-5  sm:px-[78px] md:px-14 bg-transparent flex justify-between items-center
@@ -92,7 +89,6 @@ const nav = () => {
               onClick={() => setIsOpen(!isOpen)}
               className="cursor-pointer md:hidden "
             >
-              {/* <img src={hum} className="text-white w-[24px] h-[16px]" alt="" /> */}
               {!isOpen ? (
                 <div className="">
                   <FaBars size={30} color="#12273d" />
@@ -139,23 +135,23 @@ const nav = () => {
         className={` z-20 w-[450px]  flex flex-col  pt-32  text-primary  bg-secondary  h-screen max-sm:mt-[5.5rem] fixed right-0 top-[0px]  transform transition-transform  ${
           Cart ? "translate-x-0" : "translate-x-full"
         }   `}
-      > 
-      <div className="absolute top-[10px] right-[-300px]  flex w-full p-4 jstify-end">
-            <FaTimes
-              size={45}
-              color="#741906"
-              className="cursor-pointer"
-              onClick={() => setCart(false)}
-            />
-          </div>
+      >
+        <div className="absolute top-[10px] right-[-300px]  flex w-full p-4 jstify-end">
+          <FaTimes
+            size={45}
+            color="#741906"
+            className="cursor-pointer"
+            onClick={() => setCart(false)}
+          />
+        </div>
         <div className="flex flex-col space-y-4 overflow-auto px-[24px] pb-52">
-          {products.map((item,index) => {
+          {products.map((item, index) => {
             const name = item.name;
             return (
               <div
                 className={`w-full bg-white h-fit  px-[24px] py-6 
-              ${item.amount > 0 ? "static" : "hidden"} ` }
-              key = {index}
+              ${item.amount > 0 ? "static" : "hidden"} `}
+                key={index}
               >
                 <div className="flex justify-between ">
                   <div className="space-y-[6px]">
