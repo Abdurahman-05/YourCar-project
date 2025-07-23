@@ -36,7 +36,7 @@ const About = () => {
         </div>
 
         <div className="hidden lg:block">
-          <img src={Car} cl className="" alt="" />
+          <img src={Car}  className="" alt="" />
         </div>
       </div>
     </div>
