@@ -1,9 +1,3 @@
-// import React from 'react'
-
-// import Navbar from './component/Navbar.jsx'
-// import Car from './component/Car.jsx'
-// import OneCar from './component/OneCar.jsx'
-// import CarSlick from './component/carSlick.jsx'
 import Silk from "./page/Silk.jsx";
 import Cars from "./page/Cars/Cars.jsx";
 import Contact from "./page/Contact.jsx";
