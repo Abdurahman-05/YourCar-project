@@ -149,12 +149,13 @@ const nav = () => {
             />
           </div>
         <div className="flex flex-col space-y-4 overflow-auto px-[24px] pb-52">
-          {products.map((item) => {
+          {products.map((item,index) => {
             const name = item.name;
             return (
               <div
                 className={`w-full bg-white h-fit  px-[24px] py-6 
-              ${item.amount > 0 ? "static" : "hidden"} `}
+              ${item.amount > 0 ? "static" : "hidden"} ` }
+              key = {index}
               >
                 <div className="flex justify-between ">
                   <div className="space-y-[6px]">

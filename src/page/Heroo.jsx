@@ -1,10 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import hum from "../assets/nav/humberger.png";
-import CartMob from "../assets/nav/cart.png";
 import Background from "../assets/nav/Background.png";
-import CartDis from "../assets/nav/Group.png";
-import ActiveCart from "../assets/nav/ActiveCart.png";
 import Arrow from "../assets/nav/arrow.png";
 import Nav from "../component/nav";
 
