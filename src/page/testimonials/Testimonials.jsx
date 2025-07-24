@@ -1,7 +1,4 @@
 import React from "react";
-import Car from "../../assets/comment/car4.svg";
-import Star from "../../assets/comment/Star.png";
-import Title from "../../component/Title";
 import Testimonial from "./testimonial";
 import Slider from "react-slick";
 import './style.css'

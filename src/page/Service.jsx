@@ -4,7 +4,7 @@ import Star from "../assets/Product/Star.svg";
 import Hand from "../assets/Product/Hand.svg";
 import Diamond from "../assets/Product/Diamond.svg";
 import OneService from "./OneService";
-import Title from "../component/Title";
+
 
 const Service = () => {
   return (
@@ -15,8 +15,7 @@ const Service = () => {
         backgroundImage: `url(${Serv})`,
       }}
     >
-      {/* <Title mainTitle="Service" subTitle="Service" color1 = "text-[#EBEBEB]" />
-       */}
+     
       <h1 className="font-bold font-lora text-center text-[64px]   sm:text-[84px] md:text-[124px]  text-[#ebebeb] ">
         SERVICE
       </h1>

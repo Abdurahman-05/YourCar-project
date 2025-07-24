@@ -1,5 +1,4 @@
-import React from "react";
-import { useState } from "react";
+import {React, useState } from "react";
 import Background from "../assets/nav/Background.png";
 import Arrow from "../assets/nav/arrow.png";
 import Nav from "../component/nav";
@@ -57,28 +56,3 @@ const Hero = () => {
 
 export default Hero;
 
-// {/* // <div className="flex flex-col items-center justify-center h-screen md:items-end">
-// //   <p>This is a paragraph.</p>
-// //   <div>This is a div.</div>
-// //   <button>This is a button</button>
-//    <div /> */}
-
-{
-  /* <div className="flex flex-col items-center justify-center w-full mt-20 space-y-12 font-lora md:items-end md:mt-10 md:space-y-4">
-<div className="text-[38px]  md:text-[54px] font-bold md:w-[600px] md:leading-none  text-center  mx-12 md:mx-4  leading-tight   text-white ">
-  Find the perfect car for you at YourCar.
-</div>
-<div className=" md:bg-transparent bg-black md:w-[400px] mx-6 bg-opacity-30 p-6 md:mx-4 font-normal  inline-flex  justify-center items-center ">
-  <p className="text-2xl text-center text-white ">
-    We offer a wide range of cars that cater to your needs and budget.
-    Visit us today and drive away with your dream car!
-  </p>
-</div>
-<div className="md:w-[600px] md:inline-flex md:self-end justify-center items-center">
-  <button className="flex items-center p-2 space-x-4 border-2 rounded-md ">
-    <p className="text-white">Discover</p>
-    <img src={Arrow} alt="" />
-  </button>
-</div>
-</div> */
-}

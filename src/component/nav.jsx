@@ -1,4 +1,3 @@
-import React from "react";
 import { useState } from "react";
 import CartMob from "../assets/nav/Cart.png";
 import del from "../assets/nav/delet.svg";
@@ -35,8 +34,6 @@ const nav = () => {
     setIsOpen((prevState) => !prevState);
     document.querySelector("html").style.overflow = isOpen ? "auto" : "hidden";
   };
-
-  // fixed md:static  h-[5.5rem] bg-white z-50 md:bg-transparent   w-full px-5  sm:px-[78px] md:px-14 bg-transparent flex justify-between items-center
 
   return (
     <div className="relative">
@@ -79,11 +76,6 @@ const nav = () => {
               <div className="h-[27px] w-[23px] flex justify-center items-center text-white rounded-md font-lora bg-secondary absolute top-[-12px] right-[0px] text-[17px]">
                 {total}
               </div>
-              {/* {totalItems > 0 && (
-                    <div className="absolute font-lora  bg-secondary md:bg-[#f8d7a4] rounded text-xs md:text-secondary inline-flex justify-center items-center text-white right-0 top-0  w-[21.5px] h-[21.5px]">
-                      {totalItems}
-                    </div>
-                  )} */}
             </div>
             <div
               onClick={() => setIsOpen(!isOpen)}

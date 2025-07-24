@@ -1,7 +1,5 @@
-import React from "react";
-import Car from "../../assets/comment/car4.svg";
+import Car from "../../assets/comment/Car4.svg";
 import Star from "../../assets/comment/Star.png";
-import Title from "../../component/Title";
 
 const testimonial = () => {
   return (
@@ -22,12 +20,16 @@ const testimonial = () => {
         </div>
 
         <div className="flex flex-col justify-center items-center md:flex-row text-black  md:space-x-[45px] font-nunito  ">
-          <p className="text-secondary font-bold text-[22px] md:text-[28px]">Annie Rudy</p>
-          <p className="text-[#979797] font-light text-[16px] md:text-[24px] ">Las vegas</p>
+          <p className="text-secondary font-bold text-[22px] md:text-[28px]">
+            Annie Rudy
+          </p>
+          <p className="text-[#979797] font-light text-[16px] md:text-[24px] ">
+            Las vegas
+          </p>
         </div>
-      <div className=" w-[104px] h-[69px]  md:w-[342px] md:h-[227px] md:left-[86%] md:bottom-[-65px]  absolute bottom-[-20px] left-[94%] trasform -translate-x-1/2">
-        <img src={Car} className="z-40" alt="" />
-      </div>
+        <div className=" w-[104px] h-[69px]  md:w-[342px] md:h-[227px] md:left-[86%] md:bottom-[-65px]  absolute bottom-[-20px] left-[94%] trasform -translate-x-1/2">
+          <img src={Car} className="z-40" alt="" />
+        </div>
       </div>
     </>
   );

@@ -1,4 +1,3 @@
-import React from "react";
 import Car from "../assets/hero/brownCar.svg";
 
 const About = () => {
