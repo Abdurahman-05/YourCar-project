@@ -1,5 +1,5 @@
-import Car from "../../assets/comment/Car4.svg";
-import Star from "../../assets/comment/Star.png";
+import Car from "/assets/comment/Car4.svg";
+import Star from "/assets/comment/Star.png";
 
 const testimonial = () => {
   return (

@@ -3,7 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import OneCar from "../component/OneCar.jsx";
-import Car1 from "../assets/Cars/Car1.png";
+import Car1 from "/assets/Cars/Car1.png";
 
 const CarSlick = () => {
   var settings = {

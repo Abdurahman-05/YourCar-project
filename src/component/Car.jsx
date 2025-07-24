@@ -1,8 +1,8 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import Car1 from "../assets/Cars/Car1.png";
-import Seats from "../assets/Cars/Seats.png";
-import Luggage from "../assets/Cars/luggage.png";
+import Car1 from "/assets/Cars/Car1.png";
+import Seats from "/assets/Cars/Seats.png";
+import Luggage from "/assets/Cars/luggage.png";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";

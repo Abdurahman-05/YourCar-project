@@ -1,9 +1,9 @@
 // import React from 'react'
 // import { useState } from 'react';
-// import hum from '../assets/humberger.png'
-// import CartMob from '../assets/Cart.png'
-// import Background  from '../assets/Background.png';
-// import CartDis  from '../assets/Group.png';
+// import hum from '/assets/humberger.png'
+// import CartMob from '/assets/Cart.png'
+// import Background  from '/assets/Background.png';
+// import CartDis  from '/assets/Group.png';
 // import { setArgs } from '@craco/craco/dist/lib/args';
 
 

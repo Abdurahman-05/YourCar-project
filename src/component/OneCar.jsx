@@ -1,7 +1,7 @@
 // import React from "react";
-// import Car1 from "../assets/Cars/Car1.png";
-// import Seats from "../assets/Cars/Seats.png";
-// import luggage from "../assets/Cars/luggage.png";
+// import Car1 from "/assets/Cars/Car1.png";
+// import Seats from "/assets/Cars/Seats.png";
+// import luggage from "/assets/Cars/luggage.png";
 // const OneCar = ({
 //   image,
 //   design,

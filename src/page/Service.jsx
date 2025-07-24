@@ -1,10 +1,9 @@
 import React from "react";
-import Serv from "../assets/Product/CTA BG.png";
-import Star from "../assets/Product/Star.svg";
-import Hand from "../assets/Product/Hand.svg";
-import Diamond from "../assets/Product/Diamond.svg";
+import Serv from "/assets/Product/CTA BG.png";
+import Star from "/assets/Product/Star.svg";
+import Hand from "/assets/Product/Hand.svg";
+import Diamond from "/assets/Product/Diamond.svg";
 import OneService from "./OneService";
-
 
 const Service = () => {
   return (
@@ -15,15 +14,14 @@ const Service = () => {
         backgroundImage: `url(${Serv})`,
       }}
     >
-     
       <h1 className="font-bold font-lora text-center text-[64px]   sm:text-[84px] md:text-[124px]  text-[#ebebeb] ">
         SERVICE
       </h1>
-        <div className="relative font-lora">
-          <h1 className="absolute  text-secondary font-bold font-lora text-[34px] top-[-45px] left-[50%] sm:top-[-85px] sm:text-[64px]  md:top-[-95px]  transform -translate-x-1/2">
-            service
-          </h1>
-        </div>
+      <div className="relative font-lora">
+        <h1 className="absolute  text-secondary font-bold font-lora text-[34px] top-[-45px] left-[50%] sm:top-[-85px] sm:text-[64px]  md:top-[-95px]  transform -translate-x-1/2">
+          service
+        </h1>
+      </div>
 
       <div className="flex  flex-col-reverse justify-center items-center  px-[28px] sm:px-[10%] md:space-y-0  lg:flex-row lg:space-x-[80px] pt-[60px] ">
         <OneService

@@ -1,13 +1,12 @@
 import React from "react";
-import BMW from "../assets/Logo/BMW.png";
-import Mercedes from "../assets/Logo/Mercedes.png";
-import Mitsubishi from "../assets/Logo/Mitsubishi.png";
-import Nissan from "../assets/Logo/Nissan.png";
-import Subaru from "../assets/Logo/Subaru.png";
-import Suzuki from "../assets/Logo/Suzuki.png";
-import Toyota from "../assets/Logo/Toyota.png";
-import Volvo from "../assets/Logo/Volvo.png";
-
+import BMW from "/assets/Logo/BMW.png";
+import Mercedes from "/assets/Logo/Mercedes.png";
+import Mitsubishi from "/assets/Logo/Mitsubishi.png";
+import Nissan from "/assets/Logo/Nissan.png";
+import Subaru from "/assets/Logo/Subaru.png";
+import Suzuki from "/assets/Logo/Suzuki.png";
+import Toyota from "/assets/Logo/Toyota.png";
+import Volvo from "/assets/Logo/Volvo.png";
 
 const Brand = () => {
   return (

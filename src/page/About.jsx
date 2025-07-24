@@ -1,4 +1,4 @@
-import Car from "../assets/hero/BrownCar.svg";
+import Car from "/assets/hero/BrownCar.svg";
 
 const About = () => {
   return (

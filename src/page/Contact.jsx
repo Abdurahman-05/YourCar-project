@@ -1,10 +1,10 @@
 import React from "react";
-import Location from "../assets/Contact/Location.svg";
-import Facebook from "../assets/Contact/Facebook.svg";
-import Instagram from "../assets/Contact/Instagram.svg";
-import Email from "../assets/Contact/Email.svg";
-import Twitter from "../assets/Contact/Twitter.svg";
-import Phone from "../assets/Contact/Phone.svg";
+import Location from "/assets/Contact/Location.svg";
+import Facebook from "/assets/Contact/Facebook.svg";
+import Instagram from "/assets/Contact/Instagram.svg";
+import Email from "/assets/Contact/Email.svg";
+import Twitter from "/assets/Contact/Twitter.svg";
+import Phone from "/assets/Contact/Phone.svg";
 
 const Contact = () => {
   return (

@@ -1,6 +1,6 @@
 import { React, useState } from "react";
-import Background from "../assets/nav/Background.png";
-import Arrow from "../assets/nav/Arrow.png";
+import Background from "/assets/nav/Background.png";
+import Arrow from "/assets/nav/Arrow.png";
 import Nav from "../component/nav";
 
 const Menulinks = [

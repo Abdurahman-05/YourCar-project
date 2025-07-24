@@ -1,10 +1,10 @@
 import React from "react";
 import Cars from "./Cars";
-import Car1 from "../../assets/Cars/Car1.png";
+import Car1 from "/assets/Cars/Car1.png";
 import Slider from "react-slick";
 import carsData from "../data.json";
-import SvgOne from "../../assets/Cars/Seats.svg";
-import SvgTwo from "../../assets/Cars/Luggage.svg";
+import SvgOne from "/assets/Cars/Seats.svg";
+import SvgTwo from "/assets/Cars/Luggage.svg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useSelector } from "react-redux";
