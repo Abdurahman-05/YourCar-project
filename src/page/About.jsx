@@ -1,4 +1,4 @@
-import Car from "../assets/hero/brownCar.svg";
+import Car from "../assets/hero/BrownCar.svg";
 
 const About = () => {
   return (
@@ -22,7 +22,6 @@ const About = () => {
           </p>
 
           <p className="pt-11 text-[20px] text-[#232730]  leading-[36px]  md:leading-[30px] lg:leading-[24px] ">
-
             At YourCar, we are committed to creating a stress-free and enjoyable
             car buying experience. We understand that purchasing a luxury car
             can be a significant investment, which is why we offer flexible
@@ -35,7 +34,7 @@ const About = () => {
         </div>
 
         <div className="hidden lg:block">
-          <img src={Car}  className="" alt="" />
+          <img src={Car} className="" alt="" />
         </div>
       </div>
     </div>

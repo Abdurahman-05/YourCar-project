@@ -1,6 +1,6 @@
 import React from "react";
 import Cars from "./Cars";
-import Car1 from "../../assets/Cars/car1.png";
+import Car1 from "../../assets/Cars/Car1.png";
 import Slider from "react-slick";
 import carsData from "../data.json";
 import SvgOne from "../../assets/Cars/Seats.svg";
@@ -9,7 +9,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
-import { incrementAmount ,decrimentAmount  } from "../../features/slice";
+import { incrementAmount, decrimentAmount } from "../../features/slice";
 
 const Car = ({ CarsData }) => {
   const dispatch = useDispatch();
@@ -50,9 +50,7 @@ const Car = ({ CarsData }) => {
             <div className="flex items-center justify-center">
               <button
                 onClick={() => {
-                  
-                    dispatch(decrimentAmount({ name }));
-                  
+                  dispatch(decrimentAmount({ name }));
                 }}
                 className="h-[35px] w-[35px] bg-primary text-white rounded-tl-[4px] rounded-bl-[4px]"
               >

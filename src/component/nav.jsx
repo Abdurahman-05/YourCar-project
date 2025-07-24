@@ -1,6 +1,6 @@
 import { useState } from "react";
 import CartMob from "../assets/nav/Cart.png";
-import del from "../assets/nav/delet.svg";
+import del from "../assets/nav/Delet.svg";
 import CartDis from "../assets/nav/Group.png";
 import ActiveCart from "../assets/nav/ActiveCart.png";
 import { useSelector, useDispatch } from "react-redux";

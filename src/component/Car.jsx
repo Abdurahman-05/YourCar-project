@@ -1,13 +1,12 @@
 import React from "react";
-import { useState , useEffect} from "react";
-import Car1 from "../assets/Cars/car1.png";
+import { useState, useEffect } from "react";
+import Car1 from "../assets/Cars/Car1.png";
 import Seats from "../assets/Cars/Seats.png";
 import Luggage from "../assets/Cars/luggage.png";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import "../App.css";
-
 
 const data = [
   {
@@ -61,8 +60,8 @@ const settings = {
     },
     {
       breakpoint: 684, // For small screens (
-        slidesToShow: 1, // Show 1 item per slide on small screens
-      },
+      slidesToShow: 1, // Show 1 item per slide on small screens
+    },
   ],
 };
 
@@ -71,7 +70,7 @@ const Car = () => {
 
   const dispatch = useDispatch();
   const products = useSelector((state) => state.products);
-  
+
   const decriment = (id) => {
     setItems((prev) =>
       prev.map((item) =>
@@ -80,8 +79,7 @@ const Car = () => {
           : item
       )
     );
-    dispatch({ type: "DECRIMENT" ,payload : id});
-
+    dispatch({ type: "DECRIMENT", payload: id });
   };
   // useEffect(() => {
   //   console.log(products.map((items) => (items.count)));
@@ -93,9 +91,8 @@ const Car = () => {
         item.id == id ? { ...item, count: item.count + 1 } : item
       )
     );
-    
-    dispatch({ type: "INCRIMENT" ,payload : id});
-   
+
+    dispatch({ type: "INCRIMENT", payload: id });
   };
   return (
     <div className="w-full bg-[#fafafa]  pb-32 ">

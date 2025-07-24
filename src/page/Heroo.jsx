@@ -1,6 +1,6 @@
-import {React, useState } from "react";
+import { React, useState } from "react";
 import Background from "../assets/nav/Background.png";
-import Arrow from "../assets/nav/arrow.png";
+import Arrow from "../assets/nav/Arrow.png";
 import Nav from "../component/nav";
 
 const Menulinks = [
@@ -55,4 +55,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
