@@ -93,16 +93,16 @@ const Cars = () => {
   };
   
   return (
-    <div id="cars" className=" bg-[#fafafa]  items-center pb-16">
-      <h1 className="text-[128px] text-lora text-center font-bold text-[#EBEBEB]">
+    <div id="cars" className="bg-[#fafafa] items-center pb-12 xs:pb-16">
+      <h1 className="text-[64px] xs:text-[80px] sm:text-[100px] md:text-[128px] text-lora text-center font-bold text-[#EBEBEB]">
         CARS
       </h1>
       <div className="relative">
-        <h3 className=" absolute top-[-85px] left-1/2 transform -translate-x-1/2 text-[48px] font-bold text-primary  sm:">
+        <h3 className="absolute top-[-60px] xs:top-[-70px] sm:top-[-85px] left-1/2 transform -translate-x-1/2 text-[32px] xs:text-[40px] sm:text-[48px] font-bold text-primary">
           cars
         </h3>
       </div>
-      <div className="slider-container w-[90%] mx-auto">
+      <div className="slider-container w-[95%] xs:w-[90%] mx-auto">
         <Slider {...settings}>
              
             {products.map((CarsData, i) => (

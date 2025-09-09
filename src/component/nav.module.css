@@ -1,10 +1,10 @@
 
 .container{
-@apply fixed z-[1000] md:static md:bg-transparent  h-[5.5rem] bg-white    w-full px-5  sm:px-[78px] md:px-14  flex justify-between items-center
+@apply fixed z-[1000] md:static md:bg-transparent h-[5.5rem] bg-white w-full px-4 sm:px-6 md:px-14 lg:px-20 flex justify-between items-center
 }
 
 .companyLogo{
-  @apply text-[34px] font-bold tracking-wide font-lora text-secondary  sm:text-[45px]
+  @apply text-[28px] xs:text-[32px] sm:text-[40px] md:text-[45px] font-bold tracking-wide font-lora text-secondary
 }
 .linkContainer{
   @apply md:flex space-x-8 font-lora text-[24px] md:items-center
@@ -13,8 +13,8 @@
   @apply hidden space-x-10 text-xl font-semibold text-white md:flex 
 }
 .menuCommon{
-  @apply z-10 w-[350px] pt-[160px] h-full  lg:flex-row lg:static md:hidden  flex flex-col   text-white bg-[#12273DF2] 
-  fixed right-0  transform transition-transform
+  @apply z-10 w-[300px] xs:w-[350px] pt-[160px] h-full lg:flex-row lg:static md:hidden flex flex-col text-white bg-[#12273DF2] 
+  fixed right-0 transform transition-transform
 }
 .menuOpen{
   @apply z-[1000] translate-x-0;

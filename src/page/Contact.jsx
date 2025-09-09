@@ -8,13 +8,13 @@ import Phone from "/assets/Contact/Phone.svg";
 
 const Contact = () => {
   return (
-    <div id="contact" className="w-full ">
-      <div className="font-nunito   flex flex-col text-center justify-center items-center  space-y-[36px] px-[56px] pt-[63px] pb-[40px]  sm:pb-[40px] sm:pr-[80px]  sm:pt-[63px] lg:pl-[136px] lg:pr-[110px]  [@media(min-width:1130px)]:flex-row [@media(min-width:1130px)]:justify-between mb-[42px] [@media(min-width:1130px)]:mb-[18px]">
-        <div className="flex flex-col text-center [@media(min-width:1130px)]:items-start [@media(min-width:1130px)]:text-left">
-          <p className="text-primary  font-bold  text-[32px]  font-lora">
+    <div id="contact" className="w-full">
+      <div className="font-nunito flex flex-col text-center justify-center items-center space-y-[24px] xs:space-y-[36px] px-4 xs:px-[56px] pt-[40px] xs:pt-[63px] pb-[30px] xs:pb-[40px] sm:pr-[80px] sm:pt-[63px] lg:pl-[136px] lg:pr-[110px] lg:flex-row lg:justify-between lg:space-y-0 mb-[30px] xs:mb-[42px] lg:mb-[18px]">
+        <div className="flex flex-col text-center lg:items-start lg:text-left">
+          <p className="text-primary font-bold text-[24px] xs:text-[28px] sm:text-[32px] font-lora">
             Your<span className="font-normal">Car</span>
           </p>
-          <div className="mt-[17px] leading-[26px]   text-[18px] font-light space-y-[17px] text-secondary ml-[8px] ">
+          <div className="mt-[12px] xs:mt-[17px] leading-[1.4] text-[14px] xs:text-[16px] sm:text-[18px] font-light space-y-[12px] xs:space-y-[17px] text-secondary ml-[4px] xs:ml-[8px]">
             <p>
               We are known for luxurious and premium chaffeur services
               worldwide. We are simply the best you can find.
@@ -26,28 +26,28 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="flex flex-col font-nunito [@media(min-width:1130px)]:pl-[60px]">
-          <p className="text-primary font-semibold text-[24px] mb-[16px] m">
+        <div className="flex flex-col font-nunito lg:pl-[60px]">
+          <p className="text-primary font-semibold text-[20px] xs:text-[24px] mb-[12px] xs:mb-[16px]">
             News Letter
           </p>
-          <p className="mt-[17px] leading-[26px]   text-[16px] font-light space-y-[17px] text-secondary mb-[42px] mx-10">
+          <p className="mt-[12px] xs:mt-[17px] leading-[1.4] text-[14px] xs:text-[16px] font-light text-secondary mb-[30px] xs:mb-[42px] mx-4 xs:mx-10">
             Subscribe to our news letter for updates, news and exclusive offers
           </p>
-          <div className="flex flex-col-reverse justify-center items-center  sm:flex-row   gap-[19px] sm:gap-[17px]">
+          <div className="flex flex-col-reverse justify-center items-center sm:flex-row gap-[15px] xs:gap-[17px]">
             <input
               type="email"
-              className=" placeholder:text-secondary p-3 py-[17px]  pl-[14px] w-[276px] border   border-primary "
+              className="placeholder:text-secondary p-3 py-[14px] xs:py-[17px] pl-[12px] xs:pl-[14px] w-[240px] xs:w-[276px] border border-primary focus:outline-none focus:ring-2 focus:ring-primary/50"
               placeholder="Email"
             />
-            <button className="rounded-sm bg-primary w-fit text-[18px] font-nunito font-bold text-white px-[28px] py-[16px]">
+            <button className="rounded-sm bg-primary w-fit text-[16px] xs:text-[18px] font-nunito font-bold text-white px-[24px] xs:px-[28px] py-[14px] xs:py-[16px] hover:bg-primary/90 transition-colors">
               Subscribe
             </button>
           </div>
         </div>
 
-        <div className="flex flex-col text-[16px] items-center [@media(min-width:1130px)]:pl-[60px] w-[500px]  ">
+        <div className="flex flex-col text-[14px] xs:text-[16px] items-center lg:pl-[60px] w-full max-w-[500px]">
           <div className="">
-            <p className="text-primary font-lora text-[24px] font-semibold">
+            <p className="text-primary font-lora text-[20px] xs:text-[24px] font-semibold">
               Contact
             </p>
             <div className=" flex text-left space-x-[10px] space-y-[16px] items-center ">
@@ -74,16 +74,16 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="relative flex flex-col items-center w-full justif-center text-secondary ">
-        <div className="flex space-x-[24px]  ">
-          <img src={Facebook} className="" alt="" />
-          <img src={Twitter} className="" alt="" />
-          <img src={Instagram} className="" alt="" />
+      <div className="relative flex flex-col items-center w-full justify-center text-secondary">
+        <div className="flex space-x-[20px] xs:space-x-[24px]">
+          <img src={Facebook} className="w-6 h-6 xs:w-8 xs:h-8 hover:opacity-70 transition-opacity cursor-pointer" alt="" />
+          <img src={Twitter} className="w-6 h-6 xs:w-8 xs:h-8 hover:opacity-70 transition-opacity cursor-pointer" alt="" />
+          <img src={Instagram} className="w-6 h-6 xs:w-8 xs:h-8 hover:opacity-70 transition-opacity cursor-pointer" alt="" />
         </div>
-        <hr className="border-0 h-[2px]  w-[85%] mt-5 bg-primary" />
-        <p className=" text-[16px] mt-5 mb-10">
+        <hr className="border-0 h-[2px] w-[90%] xs:w-[85%] mt-4 xs:mt-5 bg-primary" />
+        <p className="text-[14px] xs:text-[16px] mt-4 xs:mt-5 mb-8 xs:mb-10 text-center px-4">
           © Copyright 2023 · <span className="font-bold">YourCar</span> All
-          rights reserved{" "}
+          rights reserved
         </p>
       </div>
     </div>

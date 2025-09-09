@@ -124,15 +124,15 @@ const nav = () => {
         ))}
       </div>
       <div
-        className={` z-20 w-[450px]  flex flex-col  pt-32  text-primary  bg-secondary  h-screen max-sm:mt-[5.5rem] fixed right-0 top-[0px]  transform transition-transform  ${
+        className={`z-20 w-[90vw] xs:w-[400px] sm:w-[450px] flex flex-col pt-32 text-primary bg-secondary h-screen max-sm:mt-[5.5rem] fixed right-0 top-[0px] transform transition-transform ${
           Cart ? "translate-x-0" : "translate-x-full"
-        }   `}
+        }`}
       >
-        <div className="absolute top-[10px] right-[-300px]  flex w-full p-4 jstify-end">
+        <div className="absolute top-[10px] right-[-250px] xs:right-[-300px] flex w-full p-4 justify-end">
           <FaTimes
-            size={45}
+            size={40}
             color="#741906"
-            className="cursor-pointer"
+            className="cursor-pointer hover:opacity-70 transition-opacity"
             onClick={() => setCart(false)}
           />
         </div>

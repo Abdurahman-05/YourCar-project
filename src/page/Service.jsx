@@ -9,21 +9,21 @@ const Service = () => {
   return (
     <div
       id="service"
-      className="relative w-full bg-cover bg-center flex bg-[#DFDFDF] flex-col pt-[80px]   md:space-y-0 pb-20"
+      className="relative w-full bg-cover bg-center flex bg-[#DFDFDF] flex-col pt-[60px] xs:pt-[80px] md:space-y-0 pb-16 xs:pb-20"
       style={{
         backgroundImage: `url(${Serv})`,
       }}
     >
-      <h1 className="font-bold font-lora text-center text-[64px]   sm:text-[84px] md:text-[124px]  text-[#ebebeb] ">
+      <h1 className="font-bold font-lora text-center text-[48px] xs:text-[64px] sm:text-[84px] md:text-[124px] text-[#ebebeb]">
         SERVICE
       </h1>
       <div className="relative font-lora">
-        <h1 className="absolute  text-secondary font-bold font-lora text-[34px] top-[-45px] left-[50%] sm:top-[-85px] sm:text-[64px]  md:top-[-95px]  transform -translate-x-1/2">
+        <h1 className="absolute text-secondary font-bold font-lora text-[28px] xs:text-[34px] top-[-35px] xs:top-[-45px] left-[50%] sm:top-[-85px] sm:text-[64px] md:top-[-95px] transform -translate-x-1/2">
           service
         </h1>
       </div>
 
-      <div className="flex  flex-col-reverse justify-center items-center  px-[28px] sm:px-[10%] md:space-y-0  lg:flex-row lg:space-x-[80px] pt-[60px] ">
+      <div className="flex flex-col-reverse justify-center items-center px-4 xs:px-[28px] sm:px-[10%] md:space-y-0 lg:flex-row lg:space-x-[80px] pt-[40px] xs:pt-[60px]">
         <OneService
           title="Car sales"
           description=" At YourCar, we offer a wide selection of luxury vehicles for sale. Whether you're in the market for a sleek sports car or a spacious SUV, we have the perfect vehicle to fit your needs."

@@ -2,19 +2,58 @@
 @tailwind components;
 @tailwind utilities;
 
-/* /* 
-primery- #741906
-secondory- #12273d
-*/
-/* @layer base {
+/* Global CSS Reset for Responsive Design */
+@layer base {
   * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
   }
+  
+  html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    overflow-x: hidden;
+    width: 100%;
+    min-height: 100vh;
+  }
+  
+  #root {
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  
   .slick-slide>div {
     margin: 10px;
-  
-    
   }
-} */ 
+}
+
+/* Responsive utility classes */
+@layer utilities {
+  .container-responsive {
+    width: 100%;
+    max-width: 100vw;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  @media (min-width: 640px) {
+    .container-responsive {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .container-responsive {
+      padding-left: 4rem;
+      padding-right: 4rem;
+    }
+  }
+} 
 

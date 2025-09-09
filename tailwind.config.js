@@ -8,9 +8,12 @@ export default {
         secondary: "#12273d",
       },
       screens: {
-        md: "900px",
-        lg: "1200px",
-        sm:"610px"
+        xs: "480px",
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
+        "2xl": "1536px"
       },
       fontFamily: {
         lora: ["Lora", "sans-serif"],
